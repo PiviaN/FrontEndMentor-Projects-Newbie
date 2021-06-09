@@ -16,7 +16,7 @@
       <div class="row justify-content-center align-items-center">
 
         <div class="col-12 d-flex justify-content-center">
-          <img src="/images/logo.svg" alt="logo">
+          <img src="./images/logo.svg" alt="logo">
         </div>
 
         <div class="col-12 launching-soon mt-4 text-center">
@@ -28,18 +28,19 @@
           <p>Subscribe and get notified</p>
         </div>
 
-        <div class="send-data">
-          <div class="d-flex justify-content-center email-field">
-            <input type="email" placeholder="Your email address..." class="form-control rounded-pill">
+        <form class="send-data needs-validation" novalidate>
+          <div class="d-flex email-field">
+            <input type="email" placeholder="Your email address..." name="email-address" required
+              class="form-control rounded-pill">
+          </div>
 
+          <div class="d-flex notify-field">
+            <button type="submit" class="btn rounded-pill ms-md-2 ">Notify Me</button>
           </div>
-          <div class="d-flex justify-content-center notify-field">
-            <button class="btn rounded-pill ms-md-2 ">Notify Me</button>
-          </div>
-        </div>
+        </form>
 
         <div class="mt-5 d-flex justify-content-center">
-          <img src="/images/illustration-dashboard.png" alt="illustration dashboard" class="illustration">
+          <img src="./images/illustration-dashboard.png" alt="illustration dashboard" class="illustration">
         </div>
 
         <footer class="mt-4">
@@ -47,19 +48,19 @@
             <div class="d-flex justify-content-center">
               <div class="social-media-icon">
                 <a href="https://facebook.com" target="_blank">
-                  <img src="/images/facebook-f-brands.svg" alt="facebook logo" class="logo">
+                  <img src="./images/facebook-f-brands.svg" alt="facebook logo" class="logo">
                 </a>
               </div>
 
               <div class="social-media-icon">
                 <a href="https://twitter.com">
-                  <img src="/images/twitter-brands.svg" alt="twitter logo" class="logo">
+                  <img src="./images/twitter-brands.svg" alt="twitter logo" class="logo">
                 </a>
               </div>
 
               <div class="social-media-icon">
                 <a href="https://instagram.com">
-                  <img src="/images/instagram-brands.svg" alt="instagram logo" class="logo">
+                  <img src="./images/instagram-brands.svg" alt="instagram logo" class="logo">
                 </a>
               </div>
             </div>
@@ -72,6 +73,28 @@
 
   </div>
 
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 </body>
 
 </html>
