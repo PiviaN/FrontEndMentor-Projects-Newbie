@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+  <div class="d-flex align-items-center min-vh-100">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <img src="/images/drawers.jpg" alt="drawer img" class="card-img">
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="card-body">
+              <h2>
+                Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+              </h2>
+              <p class="mt-2">
+                Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I’ve got some simple tips
+                to help you make any room feel complete.
+              </p>
+
+              <div class="card-bottom mt-3">
+                <div class="row">
+                  <div class="col-10">
+                    <img src="/images/avatar-michelle.jpg" alt="avatar" class="rounded-pill avatar">
+
+                    <div class="avatar-info">
+                      <h4>Michelle Appleton</h4>
+                      <p>28 Jun 2020</p>
+                    </div>
+                  </div>
+
+                  <div id="share-icon-body" onclick="handleClickIcon()"
+                    class="col-2 icon-share d-flex align-items-center justify-content-center">
+                    <img src="/images/icon-share.svg" alt="icon share" class="share-icon">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div id="extra-content-bottom"
+              class="display-none d-flex justify-content-center align-items-center rounded-3">
+              <div class="share">
+                <h3>share</h3>
+              </div>
+              <div class="social-media-icons">
+                <img src="/images/facebook-square-brands.svg" alt="facebook icon" class="icon">
+                <img src="/images/logo-twitter.svg" alt="twitter icon" class="icon icon-twitter">
+                <img src="/images/pinterest-brands.svg" alt="pinterest icon" class="icon icon-pinterest">
+              </div>
+
+              <div onclick="hideShareBottomIcon()"
+                class="icon-share share-icon-spacing d-flex align-items-center justify-content-center">
+                <img src="/images/icon-share.svg" alt="icon share" class="share-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let $shareIconBody = document.querySelector('#share-icon-body');
+      let $extraContentBottom = document.querySelector('#extra-content-bottom');
+
+      function handleClickIcon() {
+        $shareIconBody.classList.toggle('display-none');
+        $extraContentBottom.classList.remove('display-none');
+        $extraContentBottom.classList.add('extra-content');
+      }
+
+      function hideShareBottomIcon() {
+        $extraContentBottom.classList.toggle('display-none');
+        $shareIconBody.classList.toggle('display-none');
+      }
+
+    </script>
+</body>
+
+</html>

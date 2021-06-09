@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Colors */
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --dark-green: hsl(179, 100%, 13%);
+
+  --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --light-gray-bg-headings-btns: hsl(0, 0%, 95%);
+
+  /* Typography */
+  --font-size: 15px;
+  --Lexend-Deca: "Lexend Deca", sans-serif;
+  --BigShoulders: "Big Shoulders Display", cursive;
+}
+
+body {
+  font-size: var(--font-size);
+}
+
+.card {
+  margin-bottom: 0 !important;
+  padding: 2rem;
+  border-radius: 0% !important;
+}
+
+.card-img-top {
+  height: 3rem;
+  width: 4rem;
+  margin-left: 0.9rem;
+}
+
+.card-orange {
+  background-color: var(--bright-orange);
+}
+
+.card-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.card-dark-green {
+  background-color: var(--dark-green);
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--light-gray-bg-headings-btns);
+  font-family: var(--BigShoulders);
+}
+
+.btn,
+p {
+  font-family: var(--Lexend-Deca);
+}
+
+p {
+  color: var(--transparent-white-p);
+}
+
+.btn {
+  background-color: var(--light-gray-bg-headings-btns);
+  text-align: center;
+  width: 9rem;
+}
+
+.btn-orange {
+  color: var(--bright-orange);
+}
+
+.btn-orange:hover {
+    color: hsl(31, 100%, 59%);
+}
+
+.btn-cyan {
+  color: var(--dark-cyan);
+}
+
+.btn-cyan:hover {
+    color: hsl(184, 78%, 37%);
+}
+
+.btn-dark-green {
+  color: var(--dark-green);
+}
+
+.btn-dark-green:hover {
+    color: hsl(179, 90%, 27%);
+}

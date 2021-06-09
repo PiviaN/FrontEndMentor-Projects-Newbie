@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --darker-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-image: url(/images/bg-pattern-top-desktop.svg),
+      url(/images/bg-pattern-bottom-desktop.svg);
+    background-size: 50%, 50%;
+    background-repeat: no-repeat;
+    background-position: top left, right;
+    background-color: white;
+  }
+  .card-2 {
+    margin-top: 1rem;
+  }
+  .card-3 {
+    margin-top: 2rem;
+  }
+  .review-box-2 {
+    margin-left: 2rem;
+  }
+  .review-box-3 {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    background-image: url(/images/bg-pattern-top-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .description-box, .title-box {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .review-box {
+    width: 100% !important;
+  }
+  .card {
+    margin-bottom: 2rem;
+  }
+}
+
+body {
+  font-family: "Spartan", sans-serif !important;
+}
+
+h1 {
+  font-weight: 700 !important;
+}
+
+h3 {
+  font-weight: 500 !important;
+}
+
+p,
+span {
+  font-weight: 400 !important;
+}
+
+h3,
+p,
+span {
+  font-size: 15px !important;
+}
+
+.title-box {
+  color: var(--darker-magenta);
+}
+
+.description-box {
+  color: var(--dark-grayish-magenta);
+  width: 85%;
+}
+
+.review-box {
+  background-color: var(--light-grayish-magenta);
+  width: 80%;
+}
+
+.stars {
+  margin-left: 1rem;
+  float: left;
+  padding: 1rem;
+}
+
+.star-icon {
+  width: 1rem;
+}
+
+.review {
+  font-weight: 700;
+  color: var(--darker-magenta);
+  margin-left: 1rem;
+}
+
+.cards-row {
+  margin-top: 4rem !important;
+}
+
+.card {
+  background-color: var(--darker-magenta) !important;
+  max-height: 23rem;
+}
+
+.card :not(.avatar-info span) {
+  color: var(--white);
+}
+
+.card-top {
+  display: flex !important;
+  align-items: center;
+}
+
+.avatar {
+  width: 3.5rem;
+  float: left;
+  margin-left: 1rem;
+}
+
+.avatar-info {
+  line-height: 1.5;
+  margin-left: 1.5rem;
+}
+
+.avatar-info span {
+  color: var(--soft-pink);
+}
+
+.card-bottom {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-grayish-magenta);
+}

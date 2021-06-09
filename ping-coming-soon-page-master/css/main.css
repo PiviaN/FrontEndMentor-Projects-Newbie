@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: #4f7df3;
+  --pale-blue: #c2d3ff;
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --darker-blue: hsl(209, 33%, 12%);
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    width: 100% !important;
+    margin-top: 0.5rem;
+  }
+  .illustration {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .send-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .email-field {
+    width: 40% !important;
+  }
+  .illustration {
+    width: 75%;
+  }
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  padding: 4rem;
+}
+
+.launching-soon {
+  font-size: 2rem;
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.launching-soon span {
+  font-weight: 700;
+  margin-left: 0.3rem;
+  color: var(--darker-blue);
+}
+
+.notified p {
+  font-size: 20px;
+}
+
+.illustration {
+  width: 75%;
+}
+
+.form-control {
+  color: var(--gray);
+  padding: 1rem;
+}
+
+.form-control::placeholder {
+  padding-left: 0.5rem;
+}
+
+.btn {
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem 4rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  color: white;
+}
+
+.social-media-icon {
+  border: 0.1px solid white;
+  padding: 12px;
+  border-radius: 45.8%;
+  margin: 0 1rem;
+  filter: invert(39%) sepia(82%) saturate(834%) hue-rotate(196deg)
+    brightness(101%) contrast(91%);
+}
+
+.social-media-icon:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(180deg)
+    brightness(100%) contrast(103%);
+}
+
+.logo {
+  width: 1rem;
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(203, 44%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: 'Karla';
+}
+
+.container {
+  width: 45%;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.card {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 0px;
+    height: 100%;
+    padding: 1rem;
+}
+
+.white-card {
+  background-color: white;
+}
+
+.white-card > .card-body > .card-title {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.white-card > .card-body > .card-subtitle {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+.white-card > .card-body > .card-text {
+  color: var(--grayish-blue);
+}
+
+.dark-cyan-card {
+  background-color: var(--cyan);
+}
+
+.dark-cyan-card > .card-body > .card-title {
+  color: hsl(203, 67%, 98%);
+  font-weight: 500;
+}
+
+.dark-cyan-card > .card-body > .card-subtitle {
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+span {
+  font-size: 16px;
+  color: rgb(202, 201, 201);
+  opacity: 0.8;
+  margin-left: 0.5rem;
+}
+
+.dark-cyan-card > .card-body > .card-text {
+  color: hsl(210, 100%, 100%);
+}
+
+.btn {
+  background-color: var(--bright-yellow);
+  color: white;
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn:hover {
+    color: white;
+    font-weight: 700;
+    background-color:hsl(71, 85%, 61%);
+}
+
+.light-cyan-card {
+  background-color: hsl(179, 67%, 63%);
+}
+
+.light-cyan-card > .card-body > .card-title {
+  color: white;
+  font-weight: 700;
+}
+
+.light-cyan-card > .card-body > .card-text {
+  color: var(--light-gray);
+}

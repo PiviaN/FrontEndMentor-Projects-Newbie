@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="/js/main.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+
+<body class="d-flex align-items-center justify-content-center min-vh-100">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="card">
+      <div class="row py-5">
+        <div class="col-md-6 col-sm-12">
+          <img src="/images/illustration-woman-online-desktop.svg" alt="illustration woman" class="card-img-top">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div class="card-body">
+
+            <div class="card-title text-center">
+              <h1>FAQ</h1>
+            </div>
+
+            <ul class="list-group align-items-center align-items-md-stretch">
+
+              <li class="list-group-item list-question-item only-border-bottom" onclick="showInfoBox(event)"
+                id="question-1">
+                How many team members can I invite?
+                <img src="/images/icon-arrow-down.svg" id="arrow1" class="icon-arrow" alt="icon-arrow-down">
+              </li>
+              <li
+                class="hidden-info-1 list-group-item text-center text-md-start list-group-hidden-item only-border-bottom"
+                id="hidden-1">
+                You can invite up to 2 additional users on the Free plan. There is no limit on
+                team members for the Premium plan.
+              </li>
+
+              <li class="list-group-item list-question-item only-border-bottom" onclick="showInfoBox(event)"
+                id="question-2">
+                What is the maximum file upload size?
+                <img src="/images/icon-arrow-down.svg" id="arrow2" class="icon-arrow" alt="icon-arrow-down">
+              </li>
+              <li
+                class="hidden-info-2 list-group-item text-center text-md-start list-group-hidden-item only-border-bottom"
+                id="hidden-2">
+                No more than 2GB. All files in your account must fit your allotted storage space.
+              </li>
+
+              <li class="list-group-item list-question-item only-border-bottom" onclick="showInfoBox(event)"
+                id="question-3">
+                How do I reset my password?
+                <img src="/images/icon-arrow-down.svg" id="arrow3" class="icon-arrow" alt="icon-arrow-down">
+              </li>
+              <li
+                class="hidden-info-3 list-group-item text-center text-md-start list-group-hidden-item only-border-bottom"
+                id="hidden-3">
+                Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.
+              </li>
+
+              <li class="list-group-item list-question-item only-border-bottom" onclick="showInfoBox(event)"
+                id="question-4">
+                Can I cancel my subscription?
+                <img src="/images/icon-arrow-down.svg" id="arrow4" class="icon-arrow" alt="icon-arrow-down">
+              </li>
+              <li
+                class="hidden-info-4 list-group-item text-center text-md-start list-group-hidden-item only-border-bottom"
+                id="hidden-4">
+                Yes! Send us a message and we’ll process your request no questions asked.
+              </li>
+
+              <li class="list-group-item list-question-item no-border" onclick="showInfoBox(event)" id="question-5">
+                Do you provide additional support?
+                <img src="/images/icon-arrow-down.svg" id="arrow5" class="icon-arrow" alt="icon-arrow-down">
+              </li>
+              <li class="hidden-info-5 list-group-item text-center text-md-start list-group-hidden-item no-border"
+                id="hidden-5">
+                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
