@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <div class="d-flex align-items-center min-vh-100">
+    <div class="container d-flex align-items-center">
+      <div class="row d-flex align-items-center">
+
+        <div class="col-md-6 col-sm-12 text-info">
+          <h1>Learn to code by<br> watching others</h1>
+          <p class="mt-4">
+            See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+
+          <div class="info-div text-center">
+            <div class="d-md-inline try-it-free" style="cursor: pointer;">
+              Try it free 7 days
+            </div>
+            <div class="d-md-inline">
+              <span>then $20/mo. thereafter</span>
+            </div>
+          </div>
+
+          <form class="needs-validation form mt-4 rounded-3" novalidate>
+
+            <div class="mt-3">
+              <input type="text" class="form-control rounded-2" placeholder="First Name" required>
+              <div class="invalid-feedback text-end">First Name cannot be empty</div>
+            </div>
+
+            <div class="mt-3">
+              <input type="text" class="form-control rounded-2" placeholder="Last Name" required>
+              <div class="invalid-feedback text-end">Last Name Cannot be empty</div>
+            </div>
+
+            <div class="mt-3">
+              <input type="email" class="form-control rounded-2" placeholder="Email Address" required>
+              <div class="invalid-feedback text-end">Looks like this is not an email</div>
+            </div>
+
+            <div class="mt-3">
+              <input type="password" class="form-control rounded-2" placeholder="Password" required>
+              <div class="invalid-feedback text-end">Password cannot be empty</div>
+            </div>
+
+            <button class="btn mt-3 w-100" type="submit">Claim your free trial</button>
+
+            <div class="terms text-center mt-3">
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+
+</body>
+
+</html>
